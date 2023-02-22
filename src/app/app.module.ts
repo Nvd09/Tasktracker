@@ -8,6 +8,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { TaskItemComponent } from './task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 
 @NgModule({
@@ -17,14 +18,16 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
     ButtonComponent,
     TasksComponent,
     TaskItemComponent,
-    AddTaskComponent
+    AddTaskComponent,
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
