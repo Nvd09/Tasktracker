@@ -1,15 +1,35 @@
-<form class="add-form">
+<form [formGroup]="taskForm" class="add-form" (ngSubmit)="onTaskSubmit()">
   <div class="form-control">
     <label for="text">Task</label>
-    <input type="text" name="text" id="text" placeholder="Add Task" />
+    <input
+      type="text"
+      name="text"
+      id="text"
+      placeholder="Add Task"
+      formControlName="text"
+      required
+    />
   </div>
   <div class="form-control">
     <label for="text">Day & Time</label>
-    <input type="text" name="day" id="day" placeholder="Add Day & Time" />
+    <input
+      type="text"
+      name="day"
+      id="day"
+      placeholder="Add Day & Time"
+      formControlName="day"
+      required
+    />
   </div>
   <div class="form-control form-control-check">
     <label for="reminder">Set Reminder</label>
-    <input type="checkbox" name="reminder" id="reminder" />
+    <input
+      type="checkbox"
+      name="reminder"
+      id="reminder"
+      formControlName="reminder"
+      required
+    />
   </div>
   <input type="submit" value="Save Task" class="btn btn-black" />
 </form>
