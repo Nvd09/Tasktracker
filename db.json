@@ -29,6 +29,12 @@
       "day": "asdasd",
       "reminder": false,
       "id": 5
+    },
+    {
+      "text": "Library",
+      "day": "Monday 10 AM",
+      "reminder": true,
+      "id": 6
     }
   ]
 }
